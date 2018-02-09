@@ -8,8 +8,14 @@ public void setup()
 } 
 public void draw() 
 {   
-	background(0);   
-	stroke(0,255,0);   
+	//background
+	background(0);
+	for (int i = 0; i < 500; i++)
+	{
+		stroke(0,0,0+i/3);
+		line(0,i,640,i);
+	}   
+	stroke(0,100,0);   
 	line(320,480,320,380);   
 	drawBranches(320,380,100,3*Math.PI/2);
 } 
